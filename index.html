@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>eSpeech Documentation</title>
+
+        <link rel="shortcut icon" href="favicon.png" />
+
+        <!-- Google Font
+        test -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
+
+        <!-- FontAwesome JS-->
+        <!--<script defer src="assets/fontawesome/js/all.min.js"></script>-->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+
+        <!-- Theme CSS -->
+        <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+    </head>
+
+    <body class="docs-page">
+        <header class="header fixed-top">
+            <div class="branding docs-branding">
+                <div class="container-fluid position-relative py-2">
+                    <div class="docs-logo-wrapper">
+                        <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="site-logo">
+                            <a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="images/logo.svg" alt="logo" /></a>
+                        </div>
+                    </div>
+                    <!--//docs-logo-wrapper-->
+                    <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+                        <a href="https://wrteam.in/"> <img src="images/ic_launcher_round.png" alt="eSpeech" width="20%" height="20%" /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="docs-wrapper">
+            <div id="docs-sidebar" class="docs-sidebar">
+                <div class="top-search-box d-lg-none p-3">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input" />
+                        <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <nav id="docs-nav" class="docs-nav navbar">
+                    <ul class="section-items list-unstyled nav flex-column pb-3">
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto active" href="#section-1">
+                                <span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#setup">How to setup Flutter</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#setupios">Setup Project on MacOS</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#apk">Generate Release APK</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#iosbuild">How to Publish iOS App to App Store</a></li>
+                        
+                        <li class="nav-item section-title mt-3">
+                            <a class="nav-link scrollto" href="#section-3">
+                                <span class="theme-icon-holder me-2"><i class="fas fa-server"></i></span>Firebase
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#create_fcm">Create Firebase Project</a></li>
+                        
+                        <li class="nav-item section-title mt-3">
+                            <a class="nav-link scrollto" href="#section-4">
+                                <span class="theme-icon-holder me-2"><i class="fas fa-server"></i></span>Custom changes
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#setapiurl">Set API URL</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#changecolor">Change Colour</a></li>
+                       
+                        <li class="nav-item section-title mt-3">
+                            <a class="nav-link scrollto" href="#section-7">
+                                <span class="theme-icon-holder me-2"><i class="fas fa-question-circle"></i></span>WRTeam
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#support">Need Support?</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#rating">Feedback</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#contactus">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <!--//docs-nav-->
+            </div>
+            <!--//docs-sidebar-->
+            <div class="docs-content">
+                <div class="container">
+                    <article class="docs-article" id="section-1">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">
+                                <img src="images/wrteam.png" alt="SmartKitPro" /> <span class="docs-time"><a href="https://wrteam.in/" target="_blank">wrteam.in</a></span>
+                            </h1>
+
+                            <section class="docs-intro">
+                                <p>
+                                    WRTeam is a company built with the ideology of customers first. We are a team of enthusiastic individuals, with foresight for innovation and a passion for solving everyday problems using the latest
+                                    technology.
+                                </p>
+                            </section>
+                            <section class="docs-intro">
+                                <p>
+                                    We trust in your ideas and want to help you bring them to life, so you can focus on your long term vision while we do all the hard work. As a service providing company, we understand your needs and strive
+                                    hard to provide you with the best possible quality of service whether it is the development of your app, logo design or branding, or UI/UX improvements.
+                                </p>
+                            </section>
+                            <section class="docs-intro">
+                                <p>
+                                    To achieve the above, we have handpicked our people and recruited a team of multi-talented individuals, each of whom adds a unique skill to our team of service providers. We ensure quality by imparting
+                                    strict testing of all our products, listening to the customer complaints, and solving their problems on a priority basis.
+                                </p>
+                            </section>
+                        </header>
+                        <section class="docs-section" id="setup">
+                            <h2 class="section-heading">How to Setup Flutter in Android Studio</h2>
+                            <ol>
+                                <li>Download Lastest Flutter SDK from below link.in that click on flutter_window_xxx.zip button.</li>
+
+                                <li><a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk Here</a></li>
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/setup.png" alt="SmartKitPro" />
+
+                                <br />
+                                <br />
+                                <li>Extract the zip file and copy flutter folder into your desired installation location for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like C:\Program Files\).</li>
+                                <br />
+                                <li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.</li>
+                                <br />
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/setup2.png" alt="SmartKitPro" />
+                                <br />
+                                <li>Now set your enviournment variable</li>
+                                <li>From the Start search bar in , type &apos;env&apos; and select Edit environment variables for your account</li>
+
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/path.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+
+                                <li>Under User variables check if there is an entry called Path:</li>
+                                <li>Click on Edit.new Dialog open from it click on new and copy full path to flutter\bin as its value</li>
+                                <li>Now Restart your pc for changes to take effect</li>
+                                <img class="figure-img img-fluid shadow rounded" src="images/path2.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+                                <li>Now check everything is ok or not</li>
+                                <li>open cmd and do following shown in below picture</li>
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/check.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+                                <li>Now open Android Studio and create new flutter project then select your flutter sdk file to the location where we have downloaded earlier and that's it</li>
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/flutter.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+                            </ol>
+                        </section>
+                        <!--//section-->
+
+                        <section class="docs-section" id="setupios">
+                            <h2 class="section-heading">Setup Project on MacOS</h2>
+                            <ol>
+                                <li>Open Project folder in Android Studio. Go to Preferences > Language & Frameworks > Flutter and Set Flutter SDK Path & Enable Dart support for Project and Apply and OK.</li>
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/open-preferences-android studio.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/flutter-path-set.png" alt="SmartKitPro" />
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/dart-enable-pathSet.png" alt="SmartKitPro" />
+
+                                <br />
+                                <br />
+                                <li>Next: Go to Flutter > Clean Flutter > Flutter Pub Get.</li>
+                                <br />
+                                <li>Go to Terminal > write command -> cd iOS and press enter key and then write command pod install. After finishing pods installation.</li>
+                                <br />
+                                <li>Go to Flutter > Open iOS module in Xcode</li>
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/flutter-clean-pub get-Open in Xcode.png" alt="SmartKitPro" />
+                                <br />
+
+                                <li>Select Project > Target > Check For Display Name and Bundle Identifier in General Tab.</li>
+                                <img class="figure-img img-fluid shadow rounded" src="images/xcode-name&BundleID.png" alt="SmartKitPro" />
+                                <br />
+                                <li>Now go to Signing & Capabilities >Signing > Team - Add Your Team / Apple Developer Account here.</li>
+                                <img class="figure-img img-fluid shadow rounded" src="images/xcode-capabilities.png" alt="SmartKitPro" />
+                                <br />
+
+                                <li>Add Following Capabilities according to Requirement of your Project & Respected Packages From Pubspec.yaml file.<br /></li>
+                                <ul>
+                                    <li>Sign in with Apple</li>
+                                    <br />
+                                    <li>Apple Pay > Add Your merchant ID incase you want to use Apple Pay.</li>
+                                    <br />
+                                    <li>Associated Domains > add applinks of your Domain.</li>
+                                    <br />
+                                    <li>Background Modes > Location updates</li>
+                                    <br />
+                                </ul>
+                            </ol>
+                        </section>
+
+                        <section class="docs-section" id="apk">
+                            <h2 class="section-heading">Generate Release APK</h2>
+                            <ol>
+                                <li>In you android studio, right click on you android module of you flutter project.there is option flutter, click on that inside open in new module.then generate release apk from that new module.</li>
+
+                                <br />
+
+                                <img class="figure-img img-fluid shadow rounded" src="images/apk1.png" alt="SmartKitPro" />
+
+                                <li>
+                                    and if in your android studio if flutter option is disable then go to file option in your android studio inside open then locate your flutter project's android module and open it.now generate relase apk
+                                    from that new module.
+                                </li>
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/apk2.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/apk3.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+                                <li>In Build menu there is option generate signed bundle/apk.</li>
+
+                                <br />
+                                <img class="figure-img img-fluid shadow rounded" src="images/apk4.png" alt="SmartKitPro" />
+                                <br />
+                                <br />
+                            </ol>
+                        </section>
+                        <!--//section-->
+
+                        <section class="docs-section" id="iosbuild">
+                            <h2 class="section-heading">Steps to Publish iOS App to App Store</h2>
+                            <ol>
+                                <li>
+                                    Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded From Firebase Project] inside folder named
+                                    Runner.
+                                </li>
+
+                                <br />
+                                <img src="images/ios1.png" alt="eShop" />
+                                <br />
+                                <br />
+
+                                <li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.</li>
+                                <br />
+                                <img src="images/ios3.png" alt="eShop" />
+                                <br />
+                                <br />
+
+                                <li>After that Select <b>Archive</b> From Product Menu of Xcode as shown below.</li>
+
+                                <br />
+                                <img src="images/ios4.png" alt="eShop" />
+                                <br />
+                                <br />
+
+                                <li>Once Build / Archive Generated, pop up window will be shown. Validate app First, and After Successfull Validation of App, You Can Distribute App to AppStore.</li>
+
+                                <img src="images/ios5.png" alt="eShop" />
+                                <br />
+                                <br />
+
+                                <li>After SuccessFull Submission of Build File, it will be Reflected to your Apple Developer Account in which we have created app with same Bundle ID.</li>
+                                <a href="https://codewithchris.com/submit-your-app-to-the-app-store/" style="color: red;">Click here for Detailed Help</a>
+                            </ol>
+
+                            <p></p>
+                            <div class="section_bdr"></div>
+                        </section>
+                    </article>
+
+                    
+
+                    <article class="docs-article" id="section-3">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">Firebase</h1>
+                            <section class="docs-intro">
+                                <p></p>
+                            </section>
+                            <!--//docs-intro-->
+                        </header>
+                        <section class="docs-section" id="create_fcm">
+                            <h2 class="section-heading">Create Firebase Project for Application.</h2>
+                            <li>We need Firebase project for <b>Firebase Notification</b></li>
+                            <li>here is steps for craete project.</li>
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create1.png" /></a><br />
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create2.png" /></a><br />
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create3.png" /></a><br />
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create4.png" /></a><br />
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create5.png" /></a><br />
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create6.png" /></a><br />
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create7.png" /></a><br />
+                            <br />
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create8.png" /></a><br />
+                            <br />
+                            <br />
+                            <h3>IOS</h3>
+                            <li>for ios,perform below step. now click on add app.</li>
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/create9.png" /></a><br />
+                            <br />
+                            <li>and then click on ios button.in this same as android step will be here, you have to enter your appname.then next</li>
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/ios.png" /></a><br />
+                            <br />
+                            <li>on next screen download google service info.plist file.</li>
+                            <a href="#create_fcm"><img class="figure-img img-fluid shadow rounded" src="images/ios2.png" /></a><br />
+                            <br />
+                            <li>now copy the content of that file and replace in ios > Runner > GoogleServie-info.plist</li>
+							
+							<ul><li>now press next next on firebase console and that's it your project is created on ios.</li>
+                            <ul>
+                                <li>Move or copy GoogleService-Info.plist into the [my_project]/ios/Runner directory.</li>
+                                <li>Open Xcode, then right-click on Runner directory and select Add Files to "Runner".</li>
+                                <li>Select GoogleService-Info.plist from the file manager.</li>
+                                <li>A dialog will show up and ask you to select the targets, select the Runner target.</li>
+                            </ul></ul>
+                            <img src="images/fcm10.png" alt="eShop" /><br />
+                            <br />
+                        </section>
+                        <!--//section-->
+
+                       
+
+
+                     
+
+                    </article>
+                  
+
+
+                   
+
+                       
+                    <article class="docs-article" id="section-4">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">Custom changes</h1>
+                            <section class="docs-intro">
+                                <p></p>
+                            </section>
+                        </header>
+                        <section class="doc-section" id="setapiurl">
+                            <br/>
+                            <h2>How to Change API URL ?</h2>
+                            <ul>
+                                <li>Go to <b>constant.dart</b> file from helper folder. (lib->helper->constant.dart)</li>                               
+                            </ul>
+                            
+                            <a href="#setapiurl"><img class="figure-img img-fluid shadow rounded" src="images/apiurl.png" /></a><br />
+                        </section>
+                        </header>
+                        <section class="doc-section" id="changecolor">
+                            <br/>
+                            <h2>How to Change Colour ?</h2>
+                            <ul>
+                                <li>Go to <b>colorsres.dart</b> file from helper folder. (lib->helper->colorsres.dart)</li>                               
+                            </ul>
+                            
+                            <a href="#changecolor"><img class="figure-img img-fluid shadow rounded" src="images/colorcode.png" /></a><br />
+                        </section>
+                        </article>
+
+                       
+                    <article class="docs-article" id="section-7">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">Support</h1>
+                            <section class="docs-intro">
+                                <p></p>
+                            </section>
+                        </header>
+
+                        <section class="docs-section" id="support">
+                            <h2>Need Support ?</h2>
+                            <p>Its our pleasure to serve our service and support. please contact our support team.</p>
+                            <p>
+                                Head of Customer Support : Bharavi Patel,<br />
+                                Skype: <a href="https://join.skype.com/invite/vM85JTUEkGlE" target="_blank" style="color: #3c55d1;"> Bharavi Patel</a>
+                            </p>
+
+                            <p>
+                                To help our customers, we constantly be in touch with every customer if they need any assistance regarding our product. We offer our customers a support from
+                                <strong> Mon &#9472; Fri 9.00am to 6.00pm IST (GMT +5.30) &#9472; We are a Team located in India &#9472; Asia.</strong>
+                            </p>
+
+                            <p>Typically we reply our customers for all the questions and queries within 24 hours of time via comments, support forum or emails.</p>
+                        </section>
+
+                        <section class="docs-section" id="rating">
+                            <h2>Your Feedback</h2>
+                            <p>
+                                Dear valuable customer, Thank you very much for choosing our product. It's our pleasure to serve top-notch service to you. Please give us your honest feedback that will help us to make a more strong and
+                                reliable product by click here <a href="https://codecanyon.net/downloads" style="color: #3c55d1;" target="_blank">Rate Us</a>. Thank you very much.
+                            </p>
+                        </section>
+
+                        <section class="docs-section" id="contactus">
+                            <h2>Contact Us</h2>
+                            <p>
+                                WRTeam has creative and dedicated group of developers who are mastered in Apps Developments and Web Application Development with a niche in delivering quality solutions to customers across the globe. Contact
+                                us today to find out how we can help you or for freelance work.
+                            </p>
+                            <p>
+                                Visit Us : <a href="https://wrteam.in/" target="_blank"><span style="color: #0e8bcb;">https://wrteam.in</span> </a>
+                            </p>
+
+                            <p>Mail Us : info@wrteam.in</p>
+                            <p>Call Us : +91 9033 646589</p>
+                            <p>Skype : <a href="https://join.skype.com/invite/vM85JTUEkGlE" target="_blank" style="color: #3c55d1;"> Bharavi Patel</a></p>
+
+                            <p>Mail Us : info@wrteam.in</p>
+
+                            <p>Thank you very much.</p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--//docs-wrapper-->
+
+        <!-- Javascript -->
+        <script src="assets/plugins/popper.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Page Specific JS -->
+        <script src="assets/plugins/smoothscroll.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+        <script src="assets/js/highlight-custom.js"></script>
+        <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+        <script src="assets/js/docs.js"></script>
+    </body>
+</html>
