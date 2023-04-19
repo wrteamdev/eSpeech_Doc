@@ -72,6 +72,8 @@
                                 <span class="theme-icon-holder me-2"><i class="fas fa-server"></i></span>Custom changes
                             </a>
                         </li>
+                       
+                        <li class="nav-item"><a class="nav-link scrollto" href="#setappname">Set App Name</a></li>
                         <li class="nav-item"><a class="nav-link scrollto" href="#setapiurl">Set API URL</a></li>
                         <li class="nav-item"><a class="nav-link scrollto" href="#changecolor">Change Colour</a></li>
                        
@@ -333,16 +335,10 @@
                         </section>
                         <!--//section-->
 
-                       
-
-
-                     
-
                     </article>
                   
 
-
-                   
+                  
 
                        
                     <article class="docs-article" id="section-4">
@@ -352,25 +348,50 @@
                                 <p></p>
                             </section>
                         </header>
-                        <section class="doc-section" id="setapiurl">
+                        <section class="docs-section" id="setappname">
+                            <h2 class="section-heading">How to Change Application Name ?</h2>
+                           
+                            <br />
+                            <ul>
+                                <li>Go to <b>stringsres.dart</b> file from helper folder. (lib->helper->stringsres.dart)</li>                               
+                            </ul>                                                     
+                            <img class="figure-img img-fluid shadow rounded" src="images/appname3.png" /><br />                           
                             <br/>
-                            <h2>How to Change API URL ?</h2>
+                            <ul>
+                                <li><b>For Android</b>, open android > app > src > main > open AndroidManifest.xml and inside that label change that string as shown in below image</li>
+                            </ul>                           
+                            <img class="figure-img img-fluid shadow rounded" src="images/appname1.png" /><br />                                               
+                            <br/>
+                            <ul>
+                                <li><b>For iOS</b>, open ios > Runner > Info.plist inside that there is key CFBundleName, change that key's string as shown in below image</li>
+                            </ul>
+                           <img class="figure-img img-fluid shadow rounded" src="images/appname2.png" /><br />
+                           <br />
+                        </section>
+                        <section class="docs-section" id="setapiurl">
+                            <h2 class="section-heading">How to Change API URL ?</h2>
+                           
+                            <br />
                             <ul>
                                 <li>Go to <b>constant.dart</b> file from helper folder. (lib->helper->constant.dart)</li>                               
-                            </ul>
-                            
-                            <a href="#setapiurl"><img class="figure-img img-fluid shadow rounded" src="images/apiurl.png" /></a><br />
-                        </section>
-                        </header>
-                        <section class="doc-section" id="changecolor">
+                            </ul>                                                     
+                            <img class="figure-img img-fluid shadow rounded" src="images/apiurl.png" /><br />                           
                             <br/>
-                            <h2>How to Change Colour ?</h2>
+                            
+                        </section>
+                        <section class="docs-section" id="changecolor">
+                            <h2 class="section-heading">How to Change Colour ?</h2>
+                           
+                            <br />
                             <ul>
                                 <li>Go to <b>colorsres.dart</b> file from helper folder. (lib->helper->colorsres.dart)</li>                               
-                            </ul>
+                            </ul>                                                     
+                            <img class="figure-img img-fluid shadow rounded" src="images/colorcode.png" /><br />                           
+                            <br/>
                             
-                            <a href="#changecolor"><img class="figure-img img-fluid shadow rounded" src="images/colorcode.png" /></a><br />
                         </section>
+                        
+                      
                         </article>
 
                        
